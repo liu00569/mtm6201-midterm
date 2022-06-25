@@ -1,3 +1,49 @@
 body{
     background-color: black;
 }
+
+.fa-solid{
+    color: white;
+}
+
+.frontpage{
+    background-image: url(../images/home-bg1.jpg);
+}
+.frontpage > p{
+    color: white;
+    font-size: xx-large;
+    font-family: Raleway;
+}
+
+.home-button p{
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+}
+
+.hour{
+    background-color: white;
+}
+
+.tickets{
+    background-image: url(../images/home-bg2.jpg);
+}
+.tickets h1, .tickets p{
+    color: white;
+}
+
+.three{
+    background-color: #ebebea;
+}
+
+.recent-collection{
+    background-color: white;
+}
+
+.visual{
+    background-image: url(../images/home-bg3.jpg);
+}
+
+footer{
+    color: white;
+}
