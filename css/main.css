@@ -428,6 +428,7 @@ button{
 }
 
 .about .bg-text{
+    color: white;
     width: 80%;
     padding: 25px 10%;
 }
