@@ -394,3 +394,21 @@ button{
     font-weight: 500;
     font-style: italic;
 }
+
+/* collect page starts here */
+.upcoming{
+    background-color: #ebebea;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.upcoming h1{
+    padding-left: 10%;
+}
+
+.upcoming p:last-child{
+    padding-top: 20px;
+    text-decoration: underline;
+    font-weight: 500;
+    font-style: italic;
+}
