@@ -50,14 +50,27 @@ table {
 /* code from here */
 body{
     background-color: black;
+    font-family: Raleway;
 }
 
 h1{
     font-size: 24px;
+    font-weight: 600;
 }
 
-img{
+h2{
+    font-size: 20px;
+    color: #c57b57;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+main img{
     width: 324px;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 20px auto;
 }
 
 .logo{
@@ -65,13 +78,9 @@ img{
     width: auto;
 }
 
-p{
-    text-align: left;
-}
-
 .dropbtn .fa-solid{
     color: white;
-    border: none;
+    background-color: black;
 }
 
 .dropdown{
@@ -80,7 +89,8 @@ p{
 }
 
 .dropcontent{
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     background-color: #ebebea;
     min-width: 150px;
@@ -89,13 +99,23 @@ p{
 .dropcontent a{
     color: black;
     display: block;
+}
 
+nav{
+    display: block;
 }
 
 nav ul{
     display: flex;
-    flex-direction: column;
+    list-style-type: none;
+    padding: auto;
+    margin: auto;
 }
+
+nav ul li{
+    flex: 1;
+}
+
 
 nav a,
 nav a:link,
@@ -108,7 +128,6 @@ nav a:visited{
 nav a:hover,
 nav a:focus{
     text-decoration: darkgoldenrod;
-
 }
 
 nav a:active{
@@ -118,7 +137,6 @@ nav a:active{
 .frontpage{
     background-image: url(../images/home-bg1.jpg);
     background-repeat: no-repeat;
-    
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -126,24 +144,49 @@ nav a:active{
 }
 
 .frontpage .bg-img{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     height: 300px;
 }
 
-.frontpage > p{
+.frontpage p{
     color: white;
-    font-size: xx-large;
-    font-family: Raleway;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.frontpage p:nth-child(2){
+    padding-top: 10px;
 }
 
 .home-button p{
     display: inline-block;
     color: white;
-    border: 2px solid white;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 40px;
+    border: 3px solid white;
 }
 
-.hour{
+.home-button{
+    padding-left: calc(50% - 107px);
+    margin-top: 30px;
+}
+
+.hours{
     background-color: white;
+    padding-bottom: 30px;
+}
+
+.text{
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 30px;
+}
+
+.three .text p:last-child, .recent-collections .text p:last-child{
+    padding-top: 20px;
+    text-decoration: underline;
 }
 
 .tickets{
@@ -151,19 +194,27 @@ nav a:active{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 245px;
     width: auto;
 }
+
+.tickets .bg-img{
+    backdrop-filter: blur(4px);
+    height: 245px;
+}
+
 .tickets h1, .tickets p{
     color: white;
 }
 
 .three{
     background-color: #ebebea;
+    padding-bottom: 30px;
 }
 
-.recent-collection{
+.recent-collections{
     background-color: white;
+    padding-bottom: 30px;
 }
 
 .visual{
@@ -171,11 +222,69 @@ nav a:active{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 150px;
     width: auto;
+}
+
+.visual .bg-img{
+    backdrop-filter: blur(4px);
+    height: 150px;
+}
+
+.visual h1{
+    text-align: center;
+    padding-top: 45px;
+}
+
+.visual p{
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer{
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 footer p{
     color: white;
     text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+footer .input{
+    text-align: center;
+}
+
+.footer-button{
+    display: inline-block;
+    background-color: white;
+    padding: 0 20px;
+}
+
+footer div{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.footer-button p{
+    color: black;
+    font-size: 12px;
+}
+
+.icons{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.icons .fa-brands:nth-child(2){
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.copyright{
+    font-size: 12px;
 }
