@@ -356,12 +356,41 @@ button{
     color: white;
 }
 
-.v-tickets h1, .floorplan h1, .services h1, .gifts h1{
+.v-page h1{
     padding: 20px 10%;
 }
 
-.v-tickets p, .floorplan p, .services p, .gifts p{
+.v-page p{
     width: 80%;
     padding-left: 10%;
     padding-bottom: 15px;
+}
+
+/* activity page starts here */
+
+.a-page{
+    background-color: #ebebea;
+    padding-bottom: 15px;
+}
+
+.a-page h1{
+    padding-top: 20px;
+    padding-left: 10%;
+}
+
+.a-page h2{
+    padding-left: 10%;
+}
+
+.a-page p{
+    width: 80%;
+    padding-left: 10%;
+    padding-bottom: 15px;
+}
+
+.a-page p:last-child{
+    padding-top: 20px;
+    text-decoration: underline;
+    font-weight: 500;
+    font-style: italic;
 }
