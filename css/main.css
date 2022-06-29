@@ -65,6 +65,18 @@ h2{
     padding-bottom: 10px;
 }
 
+h4{
+    color: white;
+    padding-right: 10%;
+    padding-top: 30px; 
+    font-size: 14px;
+}
+
+.logopart{
+    display: flex;
+    flex-direction: row;
+}
+
 main img{
     width: 324px;
     display: block;
@@ -76,7 +88,7 @@ main img{
 .logo{
     height: 120px;
     width: auto;
-    margin: 10px auto;
+    margin: 5px auto 10px 5px;
 }
 
 /* .dropbtn .fa-solid{
@@ -102,6 +114,19 @@ main img{
     display: block;
 } */
 
+header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+}
+
+main{
+    margin-top: 160px;
+}
+
 nav{
     display: block;
     padding-bottom: 10px;
@@ -119,22 +144,14 @@ nav ul li{
     text-align: center;
 }
 
-
-nav a,
-nav a:link,
-nav a:visited{
+nav a, nav a:link, nav a:visited{
     display: inline-block;
     text-decoration: none;
     color: white;
 }
 
-nav a:hover,
-nav a:focus{
-    text-decoration: darkgoldenrod;
-}
-
-nav a:active{
-    text-decoration: darkorchid;
+nav a:hover, nav a:active{
+    color: goldenrod;
 }
 
 .frontpage{
@@ -255,8 +272,10 @@ nav a:active{
 }
 
 footer{
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer p{
@@ -268,6 +287,7 @@ footer p{
 
 footer .input{
     text-align: center;
+    padding-top: 5px;
 }
 
 footer div{
@@ -287,8 +307,8 @@ button{
 }
 
 .icons .fa-brands:nth-child(2){
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .copyright{
