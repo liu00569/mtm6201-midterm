@@ -412,3 +412,27 @@ button{
     font-weight: 500;
     font-style: italic;
 }
+
+/* about page starts here */
+.about{
+    background-image: url(../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    width: auto;
+}
+
+.about .bg-img{
+    height: 375px;
+}
+
+.about .bg-text{
+    width: 80%;
+    padding: 25px 10%;
+}
+
+.about h1{
+    padding-bottom: 25px;
+}
+
