@@ -72,6 +72,11 @@ h4{
     font-size: 14px;
 }
 
+.bg-img{
+        backdrop-filter: blur(4px);
+}
+
+/* header starts here */
 .logopart{
     display: flex;
     flex-direction: row;
@@ -80,8 +85,6 @@ h4{
 main img{
     width: 324px;
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: 20px auto;
 }
 
@@ -135,7 +138,6 @@ nav{
 nav ul{
     display: flex;
     list-style-type: none;
-    padding: auto;
     margin: auto;
 }
 
@@ -154,6 +156,7 @@ nav a:hover, nav a:active{
     color: goldenrod;
 }
 
+/* home page starts here */
 .frontpage{
     background-image: url(../images/home-bg1.jpg);
     background-repeat: no-repeat;
@@ -164,7 +167,6 @@ nav a:hover, nav a:active{
 }
 
 .frontpage .bg-img{
-    backdrop-filter: blur(4px);
     height: 300px;
 }
 
@@ -225,7 +227,6 @@ nav a:hover, nav a:active{
 }
 
 .tickets .bg-img{
-    backdrop-filter: blur(4px);
     height: 250px;
 }
 
@@ -253,7 +254,6 @@ nav a:hover, nav a:active{
 }
 
 .visual .bg-img{
-    backdrop-filter: blur(4px);
     height: 150px;
 }
 
@@ -271,6 +271,7 @@ nav a:hover, nav a:active{
 
 }
 
+/* footer starts here */
 footer{
     padding-bottom: 10px;
     padding-top: 10px;
@@ -313,4 +314,54 @@ button{
 
 .copyright{
     font-size: 12px;
+}
+
+/* visit page starts here */
+.v-tickets{
+    background-color: #ebebea;
+    color: black;
+}
+
+.floorplan{
+    background-image: url(../images/visit-bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 245px;
+    width: auto;
+}
+
+.floorplan .bg-img{
+    height: 245px;
+}
+
+.services{
+    background-color: white;
+}
+
+.gifts{
+    background-image: url(../images/visit-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 245px;
+    width: auto;
+}
+
+.gifts .bg-img{
+    height: 245px;
+}
+
+.gifts .bg-text{
+    color: white;
+}
+
+.v-tickets h1, .floorplan h1, .services h1, .gifts h1{
+    padding: 20px 10%;
+}
+
+.v-tickets p, .floorplan p, .services p, .gifts p{
+    width: 80%;
+    padding-left: 10%;
+    padding-bottom: 15px;
 }
