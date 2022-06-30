@@ -77,21 +77,32 @@ h4{
 }
 
 /* header starts here */
-.logopart{
+/* .logopart{
     display: flex;
     flex-direction: row;
+} */
+
+.logopart{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+}
+
+.logo{
+    grid-column: 1 / span 1;
+    width: 150px;
+    margin: 5px auto 5px 5px;
+}
+
+.logopart h4{
+    grid-column: 3 / span 1;
+    justify-self: end;
 }
 
 main img{
     width: 324px;
     display: block;
     margin: 20px auto;
-}
-
-.logo{
-    height: 120px;
-    width: auto;
-    margin: 5px auto 10px 5px;
 }
 
 /* .dropbtn .fa-solid{
@@ -312,7 +323,7 @@ button{
     padding-right: 35px;
 }
 
-.copyright{
+.copyright p{
     font-size: 12px;
 }
 
@@ -437,6 +448,128 @@ button{
     padding-bottom: 25px;
 }
 
+/* media query starts here */
+
 @media screen and (min-width: 1200px){
+
+    /* home page starts here */
+    .logo{
+        width: 200px;
+        margin-left: 50px;
+        /* grid-column: 2 / span 1;
+        align-self: center; */
+    }
+
+    .frontpage{
+        height: 650px;
+    }
+
+    .frontpage .bg-img{
+        height: 650px;
+    }
+
+    .frontpage .bg-text{
+        padding-top: 200px;
+    }
+
+    .frontpage .bg-text p{
+        font-size: 44px;
+    }
+    
+    .text{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .tickets{
+        height: 320px;
+    }
+    
+    .tickets .bg-img{
+        height: 320px;
+    }
+
+    .three{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .recent-collections{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .collect2{
+        padding-top: 15px;
+    }
+    .visual{
+        height: 250px;
+    }
+    
+    .visual .bg-img{
+        height: 250px;
+    }
+    
+    .visual h1{
+        font-size: 45px;
+        padding-top: 90px;
+    }
+    
+    /* footer starts here */
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 150px;
+    }
+    
+    footer p{
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    footer div{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    
+    button{
+        font-size: 14px;
+    }
+    
+    .icons{
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    
+    .icons .fa-brands:nth-child(2){
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    /* activity page starts here */
+    .activities{
+        display: flex;
+    }
+  
+   .a-page h1{
+       padding-top: 50px;
+   }
+
+   .a-page img{
+       width: 70%;
+   }
+
+   /* collect page starts here */
+   .upcomings{
+       display: flex;
+       flex-direction: row;
+   }
+
+
 
 }
