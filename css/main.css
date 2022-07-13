@@ -436,6 +436,7 @@ button{
 
 .about .bg-img{
     height: 375px;
+    backdrop-filter: blur(10px);
 }
 
 .about .bg-text{
@@ -455,9 +456,7 @@ button{
     /* home page starts here */
     .logo{
         width: 200px;
-        margin-left: 50px;
-        /* grid-column: 2 / span 1;
-        align-self: center; */
+        margin-left: calc(50% - 100px);
     }
 
     .frontpage{
@@ -551,13 +550,37 @@ button{
         padding-right: 55px;
     }
 
+    /* visit page starts here */
+    .v-tickets{
+        height: 220px;
+        padding-top: 60px;
+    }
+
+    .floorplan .bg-text{
+        padding-top: 50px;
+    }
+
+    .services{
+        height: 220px;
+        padding-top: 40px;
+    }
+
+    .gifts .bg-text{
+        padding-top: 40px;
+    }
+
     /* activity page starts here */
     .activities{
         display: flex;
     }
+
+    .a-page{
+        padding-top: 75px;
+        padding-bottom: 50px;
+    }
   
    .a-page h1{
-       padding-top: 50px;
+       display: none;
    }
 
    .a-page img{
@@ -565,11 +588,22 @@ button{
    }
 
    /* collect page starts here */
+   .collect1{
+       padding-top: 15px;
+   }
+
    .upcomings{
        display: flex;
        flex-direction: row;
    }
 
+   .c-page h1{
+       display: none;
+   }
 
+   /* about page starts here */
+   .about .bg-text{
+       padding-top: 100px;
+   }
 
 }
