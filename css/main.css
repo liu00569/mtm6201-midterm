@@ -72,8 +72,10 @@ h4{
     font-size: 14px;
 }
 
+
+/* make the background image blur so the text can be outstanding */
 .bg-img{
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(6px);
 }
 
 /* header starts here */
@@ -105,6 +107,7 @@ main img{
     margin: 20px auto;
 }
 
+/* logo is moving to the right side when hover it */
 .logo:hover{
     animation-name: logoMoving;
     animation-duration: 4s;
@@ -122,6 +125,7 @@ main img{
     }
 }
 
+/* try to add drop-down menu, but it won't work without javascript, so I changed the design */
 /* .dropbtn .fa-solid{
     color: white;
     background-color: black;
@@ -145,6 +149,7 @@ main img{
     display: block;
 } */
 
+/* the header always stay still and above everything else*/
 header{
     overflow: hidden;
     position: fixed;
@@ -205,6 +210,7 @@ nav a:hover, nav a:active{
     padding-top: 90px;
 }
 
+/* the heading rotate when hovering */
 .frontpage .bg-text:hover{
     transition: transform 1s;
     transform: rotateY(360deg);
@@ -223,6 +229,7 @@ nav a:hover, nav a:active{
     border: 3px solid white;
 }
 
+/* keep the button in the center */
 .home-button{
     padding-left: calc(50% - 107px);
     margin-top: 30px;
@@ -471,8 +478,8 @@ button{
     padding-bottom: 25px;
 }
 
-/* media query starts here */
 
+/* media query starts here */
 @media screen and (min-width: 1200px){
 
     /* home page starts here */
