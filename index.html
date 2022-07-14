@@ -96,7 +96,19 @@
                 <div class="text">
                 <h1>RECENT COLLECTIONS</h1>
                 <section class="collect1">
-                    <img src="images/home-pic4.jpg" alt="collect1">
+                <picture>
+                    <source srcset="images/home-pic4-320.jpg,
+                images/home-pic4-640.jpg 2x,
+                images/home-pic4-960.jpg 3x"
+                media="(max-width: 1200px)">
+                
+                <source srcset="images/home-pic4-960.jpg,
+                images/home-pic4-1920.jpg 2x,
+                images/home-pic4-2880.jpg 3x" 
+                media="(min-width: 1200px)">
+
+                <img src="images/home-pic4.jpg" alt="collect1">
+                </picture>
                     <h2>Platinum Jubilee Display</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto reprehenderit fugiat totam? Nobis modi quis molestias deserunt! Dolore animi ex laudantium voluptatibus, consequuntur numquam amet a voluptatem minima unde nulla?</p>
                     <p>LEARN MORE</p>
