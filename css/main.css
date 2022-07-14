@@ -86,8 +86,8 @@ h4{
 
 .logopart{
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 1;
+    grid-template-columns: 33.3% 33.3%  33.3%;
+    grid-template-rows: 100%;
 }
 
 .logo{
