@@ -105,6 +105,23 @@ main img{
     margin: 20px auto;
 }
 
+.logo:hover{
+    animation-name: logoMoving;
+    animation-duration: 4s;
+}
+
+@keyframes logoMoving{
+    0%{
+        transform: translate(0,0); 
+    }
+    50%{
+        transform: translate(100px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
 /* .dropbtn .fa-solid{
     color: white;
     background-color: black;
@@ -186,6 +203,11 @@ nav a:hover, nav a:active{
     font-size: 24px;
     text-align: center;
     padding-top: 90px;
+}
+
+.frontpage .bg-text:hover{
+    transition: transform 1s;
+    transform: rotateY(360deg);
 }
 
 .frontpage p:nth-child(2){
@@ -456,7 +478,7 @@ button{
     /* home page starts here */
     .logo{
         width: 200px;
-        margin-left: calc(50% - 100px);
+        /* padding-left: calc(50% - 100px); */
     }
 
     .frontpage{
@@ -492,6 +514,10 @@ button{
         display: flex;
         flex-direction: row;
     }
+
+    .services .text{
+        padding-top: 60px;
+    }
     
     .recent-collections{
         display: flex;
@@ -499,7 +525,7 @@ button{
     }
 
     .collect2{
-        padding-top: 15px;
+        padding-top: 35px;
     }
     .visual{
         height: 250px;
