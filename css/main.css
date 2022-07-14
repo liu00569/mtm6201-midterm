@@ -531,8 +531,8 @@ button{
         flex-direction: row;
     }
 
-    .collect2{
-        padding-top: 35px;
+    .container .collect2{
+        padding-top: 20px;
     }
     .visual{
         height: 250px;
@@ -621,8 +621,8 @@ button{
    }
 
    /* collect page starts here */
-   .collect1{
-       padding-top: 15px;
+   .collect2{
+       padding-top: 0px;
    }
 
    .upcomings{
